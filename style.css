@@ -57,7 +57,7 @@ html{
     padding-bottom: 0.5rem;
 
 }
-.description {
+.description{
     font-size: 0.75rem;
     text-align: center;
     padding-top: 1rem;
@@ -139,13 +139,13 @@ p{
 
 * {box-sizing: border-box}
 
-.progress-bar {
+.progress-bar{
   width: 100%;
   border: 1px solid white;
   height: 4px;
 }
 
-.skill-name {
+.skill-name{
   text-align: left;
   padding-top: 0.002rem;
   padding-bottom: 0.5rem;
@@ -183,11 +183,19 @@ p{
     letter-spacing: 1px;
     
 }
-
-
-  @media screen and (max-width:674px){
+@media screen and (max-width:674px){
     .main-content{
     grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+@media screen and (min-width:674px){
+    .main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
     }
 
 }
