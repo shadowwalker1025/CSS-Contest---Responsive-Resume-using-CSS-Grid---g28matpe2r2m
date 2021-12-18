@@ -18,7 +18,7 @@ html{
     width: 90%;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 300px 700px;
     
 
 }
@@ -28,6 +28,8 @@ html{
     color: white;
     padding: 10px;
     margin: none;
+    display: grid;
+    grid-template-columns: 300px;
     
     
     
