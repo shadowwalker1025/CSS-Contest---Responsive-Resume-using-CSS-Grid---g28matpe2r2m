@@ -142,7 +142,6 @@ h4{
   color: white;
   background-color: rgb(116, 194, 92);
   border-radius: 5px;
-  text-align: right;
   font-size: 0.65rem;
   font-weight: 0.65rem;
 }
@@ -174,9 +173,7 @@ h4{
     letter-spacing: 1px;
     
 }
-
-
-  @media screen and (max-width:674px){
+@media screen and (max-width:674px){
     .main-content{
     grid-template-columns: repeat(1, 1fr);
     }
