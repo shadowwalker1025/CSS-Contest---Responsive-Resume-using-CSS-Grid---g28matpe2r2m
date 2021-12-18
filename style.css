@@ -115,7 +115,17 @@ h4{
     text-align: center;
     font-size: 1rem;
 }
-.skill p{
+.skill{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+    padding-right: 0.5rem;
+    letter-spacing: 1px;
+}
+p{
     font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase;
@@ -123,7 +133,7 @@ h4{
     padding-left: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
-    letter-spacing: 1px;
+    letter-spacing: 1px; 
 }
 
 
@@ -173,7 +183,9 @@ h4{
     letter-spacing: 1px;
     
 }
-@media screen and (max-width:674px){
+
+
+  @media screen and (max-width:674px){
     .main-content{
     grid-template-columns: repeat(1, 1fr);
     }
