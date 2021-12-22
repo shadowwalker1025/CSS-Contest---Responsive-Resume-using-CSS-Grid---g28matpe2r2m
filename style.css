@@ -5,177 +5,112 @@
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-html{
-  /*  background-color: aqua;*/
+
+/* Write CSS code below */
+body{
+    background-color: #add8e6;
 }
 
-
-/* Write CSS code below 
-.col-1 {width: 50%;}
-.col-2 {width: 50%;}*/
-.main-content{
+.main-content {
+    display: grid;
+    grid-template-columns: 300px 700px;
     min-height: 1000px;
     width: 90%;
     margin: 20px auto;
-    display: grid;
-    grid-template-columns: 300px 700px;
-    
-
-}
-
+  }
 .left-section{
-    background-color:gray;
-    color: white;
-    padding: 10px;
-    margin: none;
     grid-column: span 1;
-
-    
-    
-    
+    background-color: gray;
+    color: #fff;
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: white;
 }
 
+.left-content{
+    padding: 1rem;
+}
 .profile-image{
     display: block;
-    /*justify-content: center;*/
     margin: auto;
-    border: 5px solid white;
+    border: 5px white solid;
     border-radius: 30%;
     width: 60%;
-    
 }
 .name{
     font-size: 1.2rem;
     font-weight: 700;
+    padding: 0.8rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.02px;
-    padding: 0.8rem;
 }
 .designation{
     font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 0.5rem;
-
 }
 .description{
     font-size: 0.75rem;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 1rem;
 }
-.profile-details{
-    font-size: 0.75rem;
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
 }
-.contact-item{
-    text-align: center;
-    
+.contactInfo{
+    padding: 5%;
 }
-.fa {
-    padding: 5px;
-    font-size: 20px;
-    width: 25px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
+.contactInfo ul{
+    position: relative;
 }
-.fa:hover {
-    opacity: 0.7;
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
 }
-.fa-facebook {
-    background: #3B5998;
-    color: white;
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
 }
-.fa-github{
-    background: #333;
-    color: white;
-
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
 }
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-.contact{
-    padding: 5px;
-    
-}
-h4{
-    color: red;
-    text-align: center;
-    font-size: 1rem;
-}
-.skill{
+.skills{
     font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 1rem;
-    padding-left: 0.5rem;
-    padding-bottom: 1rem;
-    padding-right: 0.5rem;
-    letter-spacing: 1px;
+    padding: 1rem 0.5rem;
 }
-p{
-    font-size: 0.75rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 1rem;
-    letter-spacing: 1px; 
-}
-
-
-* {box-sizing: border-box}
-
-.progress-bar{
-  width: 100%;
-  border: 1px solid white;
-  height: 4px;
-}
-
 .skill-name{
-  text-align: left;
-  padding-top: 0.002rem;
-  padding-bottom: 0.5rem;
-  color: white;
-  background-color: rgb(116, 194, 92);
-  border-radius: 5px;
-  font-size: 0.65rem;
-  font-weight: 0.65rem;
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar {
+    border: 1px white solid;
+    height: 4px;
+  }
+  
+.progress-bar>div {
+    border: 1px white solid;
+    background-color: #fff;
+    height: 4px;
+}
+.skill-item{
+    padding: 5px;
 }
 
-
-.html {width: 90%;height: 2px; background-color: #04AA6D;}
-.css {width: 80%; height: 2px; background-color: #2196F3;}
-.js {width: 65%;  height: 2px;background-color: #f44336;}
-.php {width: 60%; height: 2px; background-color: #093fd3;}
-.sql {width: 60%; height: 2px; background-color: #2e9107;}
-.reactjs {width: 60%;  height: 2px;background-color: #47013c;}
-
-.right-section{
-    background-color:azure ;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin: none;
-    grid-column: span 1 / span 2;
-
-
+.right-main-content{
+    padding: 2rem 3rem;
 }
 .right-title{
     text-transform: uppercase;
@@ -183,13 +118,33 @@ p{
     font-weight: 700;
     padding: 0.5rem;
     letter-spacing: 1px;
-    
 }
+.para{
+    padding: 0.5rem;
+}
+.box{
+    display: flex;
+}
+.box>.text{
+    padding: 0.5rem;
+}
+.box>.text{
+    padding: 0.5rem;
+}
+h6{
+    margin-top: 10px;
+}
+.box .year{
+    min-width: 150px;
+}
+.projects{
+    padding: 0.5rem;
+}
+
 @media (max-width: 673px){
     .main-content {
         grid-template-columns: repeat(1, 1fr);
         width: 90%;
         min-height: 1000px;
     }
-
 }
