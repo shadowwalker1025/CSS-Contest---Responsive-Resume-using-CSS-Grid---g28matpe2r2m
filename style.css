@@ -9,6 +9,7 @@ html{
   /*  background-color: aqua;*/
 }
 
+
 /* Write CSS code below 
 .col-1 {width: 50%;}
 .col-2 {width: 50%;}*/
@@ -17,7 +18,9 @@ html{
     width: 90%;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 300px 700px;
+    
+
 }
 
 .left-section{
@@ -25,6 +28,9 @@ html{
     color: white;
     padding: 10px;
     margin: none;
+    grid-column: span 1;
+
+    
     
     
 }
@@ -36,8 +42,7 @@ html{
     border: 5px solid white;
     border-radius: 30%;
     width: 60%;
-    width:250 ;
-    height:250;
+    
 }
 .name{
     font-size: 1.2rem;
@@ -54,7 +59,7 @@ html{
     padding-bottom: 0.5rem;
 
 }
-.description {
+.description{
     font-size: 0.75rem;
     text-align: center;
     padding-top: 1rem;
@@ -112,7 +117,17 @@ h4{
     text-align: center;
     font-size: 1rem;
 }
-.skill p{
+.skill{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+    padding-right: 0.5rem;
+    letter-spacing: 1px;
+}
+p{
     font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase;
@@ -120,26 +135,25 @@ h4{
     padding-left: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
-    letter-spacing: 1px;
+    letter-spacing: 1px; 
 }
 
 
 * {box-sizing: border-box}
 
-.progress-bar {
+.progress-bar{
   width: 100%;
   border: 1px solid white;
   height: 4px;
 }
 
-.skill-name {
+.skill-name{
   text-align: left;
   padding-top: 0.002rem;
   padding-bottom: 0.5rem;
   color: white;
   background-color: rgb(116, 194, 92);
   border-radius: 5px;
-  text-align: right;
   font-size: 0.65rem;
   font-weight: 0.65rem;
 }
@@ -159,6 +173,9 @@ h4{
     padding-left: 3rem;
     padding-right: 3rem;
     margin: none;
+    grid-column: span 1 / span 2;
+
+
 }
 .right-title{
     text-transform: uppercase;
@@ -166,24 +183,13 @@ h4{
     font-weight: 700;
     padding: 0.5rem;
     letter-spacing: 1px;
+    
 }
-@media only screen and (min-width: 674px) and (max-width: 1000px){
-    .right-section{
-        /*display: block;*/
-        grid-template-columns: 30% 70%;
-    }
-
-}
-@media only screen and (min-width: 360px) and (max-width: 674px){
-    .right-section{
-        /*display: block;*/
+@media (max-width: 673px){
+    .main-content {
         grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        min-height: 1000px;
     }
 
 }
-/*@media only screen and (max-width:674px){
-    .right-section{
-    grid-template-columns: repeat(1, 1fr);
-    }
-
-}*/
